@@ -50,8 +50,8 @@ def main():
         group_targets = targets.iloc[group_idx]
         
         #####
-        group_train = group_train.iloc[:1000]
-        group_targets = group_targets.iloc[:1000]
+        group_train = group_train.iloc[:100000]
+        group_targets = group_targets.iloc[:100000]
         #####
         print("-" * 20)
         print(f"Tuning parameters for {group} ({idx}/{len(groups)})")
