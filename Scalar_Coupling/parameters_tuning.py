@@ -40,8 +40,8 @@ BEST_SCORE = 0
 def main():
     start_time = time()
     print("Loading data")
-    full_train = pd.read_pickle(f"../input/feature-generator-distance-cosine/train_with_features.zip")
-    targets = pd.read_csv("../input/champs-scalar-coupling/train.csv", usecols=['scalar_coupling_constant'])
+    full_train = pd.read_pickle("train_with_features.zip")
+    targets = pd.read_csv("train.csv", usecols=['scalar_coupling_constant'])
     
     group_idx = get_indexes_for_group(full_train, GROUP_TO_TUNE)
     group_train = full_train.iloc[group_idx].copy().drop('type', axis=1)
