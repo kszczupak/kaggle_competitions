@@ -1,0 +1,1 @@
+{"bagging_fraction": 0.99, "boosting": "gbdt", "feature_fraction": 0.72, "lambda_l1": 1.7052188604675482, "lambda_l2": 0.6881057783959723, "learning_rate": 0.15050609863429973, "max_bin": 132, "max_depth": 19, "metric": "MAE", "min_data_in_bin": 49, "min_data_in_leaf": 23, "min_gain_to_split": 0.45, "num_leaves": 786, "objective": "huber", "subsample": 0.9685502238045707}
