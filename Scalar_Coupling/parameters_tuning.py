@@ -109,6 +109,7 @@ def quick_hyperopt(data, labels, num_evals, diagnostic=False):
         subsample = space_params['boosting'].get('subsample', 1.0)
         space_params['boosting'] = space_params['boosting']['boosting']
         space_params['subsample'] = subsample
+        space_params['verbose'] = -1
         
         #for classification, set stratified=True and metrics=EVAL_METRIC_LGBM_CLASS
         cv_results = lgb.cv(space_params, train, nfold = N_FOLDS, stratified=False,
