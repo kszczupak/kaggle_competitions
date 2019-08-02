@@ -373,7 +373,7 @@ def quick_hyperopt(data, labels, package='lgbm', num_evals=NUM_EVALS, diagnostic
                 'od_type' : 'Iter',
                 'od_wait' : 25,
                 'task_type' : 'GPU',
-                'verbose' : 0
+                'verbose' : -1
             }
         
         #optional: run CatBoost without GPU
