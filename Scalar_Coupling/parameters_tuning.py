@@ -185,7 +185,7 @@ def quick_hyperopt(data, labels, num_evals, diagnostic=False):
     for param in integer_params:
         best[param] = int(best[param])
     
-    print('{' + '\n'.join('{}: {}'.format(k, v) for k, v in best.items()) + '}')
+    # print('{' + '\n'.join('{}: {}'.format(k, v) for k, v in best.items()) + '}')
     if diagnostic:
         return(best, trials)
     else:
